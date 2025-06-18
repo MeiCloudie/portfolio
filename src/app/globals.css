@@ -45,23 +45,23 @@
 
 :root {
   --radius: 0.65rem;
-  --background: oklch(1 0 0);
+  --background: oklch(0.956 0.0603 91.8);
   --foreground: oklch(0.141 0.005 285.823);
-  --card: oklch(1 0 0);
+  --card: oklch(0.956 0.0603 91.8);
   --card-foreground: oklch(0.141 0.005 285.823);
-  --popover: oklch(1 0 0);
+  --popover: oklch(0.956 0.0603 91.8);
   --popover-foreground: oklch(0.141 0.005 285.823);
   --primary: oklch(0.795 0.184 86.047);
   --primary-foreground: oklch(0.421 0.095 57.708);
-  --secondary: oklch(0.967 0.001 286.375);
+  --secondary: oklch(0.9411 0.0593 91.45);
   --secondary-foreground: oklch(0.21 0.006 285.885);
-  --muted: oklch(0.967 0.001 286.375);
+  --muted: oklch(0.9411 0.0593 91.45);
   --muted-foreground: oklch(0.552 0.016 285.938);
-  --accent: oklch(0.967 0.001 286.375);
+  --accent: oklch(0.9411 0.0593 91.45);
   --accent-foreground: oklch(0.21 0.006 285.885);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.92 0.004 286.32);
-  --input: oklch(0.92 0.004 286.32);
+  --border: oklch(0.9263 0.0583 91.09);
+  --input: oklch(0.9263 0.0583 91.09);
   --ring: oklch(0.795 0.184 86.047);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
@@ -72,14 +72,14 @@
   --sidebar-foreground: oklch(0.141 0.005 285.823);
   --sidebar-primary: oklch(0.795 0.184 86.047);
   --sidebar-primary-foreground: oklch(0.421 0.095 57.708);
-  --sidebar-accent: oklch(0.967 0.001 286.375);
+  --sidebar-accent: oklch(0.9411 0.0593 91.45);
   --sidebar-accent-foreground: oklch(0.21 0.006 285.885);
-  --sidebar-border: oklch(0.92 0.004 286.32);
+  --sidebar-border: oklch(0.9263 0.0583 91.09);
   --sidebar-ring: oklch(0.795 0.184 86.047);
 }
 
 .dark {
-  --background: oklch(0.141 0.005 285.823);
+  --background: oklch(0.1363 0.0283 233.35);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.21 0.006 285.885);
   --card-foreground: oklch(0.985 0 0);
@@ -112,11 +112,32 @@
   --sidebar-ring: oklch(0.554 0.135 66.442);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
   body {
     @apply bg-background text-foreground;
+  }
+  .font-lobster {
+    font-family: var(--font-lobster);
+  }
+
+  section[id] {
+    scroll-margin-top: 10rem;
+  }
+}
+
+@layer components {
+  .container {
+    @apply mx-auto px-4 sm:px-8 w-full;
+
+    &:not(.max-w-none) {
+      @apply max-w-[640px] sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1280px] 2xl:max-w-[1536px];
+    }
   }
 }
