@@ -20,10 +20,18 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang='en' className={poppins.className} suppressHydrationWarning>
-      <ThemeProvider attribute='class' defaultTheme='system' enableSystem disableTransitionOnChange>
-        <body className={`${poppins.variable} antialiased`}>{children}</body>
-      </ThemeProvider>
+    <html lang='en' suppressHydrationWarning>
+      <body className={`${poppins.variable} ${poppins.className} antialiased`}>
+        <ThemeProvider
+          attribute='class'
+          defaultTheme='system'
+          enableSystem
+          disableTransitionOnChange
+          storageKey='theme-mode'
+        >
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   )
 }
