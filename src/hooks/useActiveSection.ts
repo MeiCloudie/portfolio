@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 
-export type Section = 'about' | 'skills' | 'projects' | 'contact'
+export type Section = 'about' | 'skills' | 'projects' | 'work-experience' | 'education' | 'contact'
 
 export function useActiveSection() {
   const [activeSection, setActiveSection] = useState<Section | null>(null)
@@ -24,7 +24,9 @@ export function useActiveSection() {
 
     const observer = new IntersectionObserver(callback, options)
 
-    const sections = document.querySelectorAll<HTMLElement>('#about, #skills, #projects, #contact')
+    const sections = document.querySelectorAll<HTMLElement>(
+      '#about, #skills, #projects, #work-experience, #education, #contact'
+    )
     sections.forEach((section) => observer.observe(section))
 
     return () => observer.disconnect()

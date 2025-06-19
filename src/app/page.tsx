@@ -13,6 +13,14 @@ export default function Home() {
         <p>Projects</p>
       </section>
 
+      <section id='work-experience' className='h-screen'>
+        <p>Work Experience</p>
+      </section>
+
+      <section id='education' className='h-screen'>
+        <p>Education</p>
+      </section>
+
       <section id='contact' className='h-screen'>
         <p>Contact</p>
       </section>
