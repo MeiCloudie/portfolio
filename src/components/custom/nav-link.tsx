@@ -13,6 +13,7 @@ export const NavLink = ({ isActive, className, ...props }: NavLinkProps) => {
     <Link
       className={cn(
         'relative transition-colors duration-300',
+        'flex items-center gap-2 text-xl font-semibold',
         'after:absolute after:left-0 after:bottom-[-4px]',
         'after:h-[2px] after:bg-primary',
         'after:transition-all after:duration-300',

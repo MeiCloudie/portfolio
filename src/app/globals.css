@@ -134,7 +134,7 @@ html {
 
 @layer components {
   .container {
-    @apply mx-auto px-4 sm:px-8 w-full;
+    @apply mx-auto px-6 xl:px-8 w-full;
 
     &:not(.max-w-none) {
       @apply max-w-[640px] sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1280px] 2xl:max-w-[1536px];
