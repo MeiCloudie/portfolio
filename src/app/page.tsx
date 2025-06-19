@@ -1,9 +1,9 @@
+import AboutSection from '@/components/sections/about'
+
 export default function Home() {
   return (
-    <div>
-      <section id='about' className='h-screen'>
-        <p>About</p>
-      </section>
+    <div className='flex flex-col gap-10'>
+      <AboutSection />
 
       <section id='skills' className='h-screen'>
         <p>Skills</p>

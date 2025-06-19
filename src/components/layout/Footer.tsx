@@ -1,50 +1,6 @@
-import FacebookLogo from '@/components/logo/facebook-logo'
-import GitHubLogo from '@/components/logo/github-logo'
-import LinkedinLogo from '@/components/logo/linkedin-logo'
-import XLogo from '@/components/logo/x-logo'
 import Link from 'next/link'
 import React from 'react'
-
-type SocialLink = {
-  href: string
-  icon: React.ComponentType<{ width: number; height: number; className?: string }>
-  label: string
-}
-
-const SOCIAL_LINKS: SocialLink[] = [
-  {
-    href: 'https://www.linkedin.com/in/truongthucvan/',
-    icon: LinkedinLogo,
-    label: 'LinkedIn'
-  },
-  {
-    href: 'https://github.com/MeiCloudie',
-    icon: GitHubLogo,
-    label: 'GitHub'
-  },
-  {
-    href: 'https://www.facebook.com/ttvan1242/',
-    icon: FacebookLogo,
-    label: 'Facebook'
-  },
-  {
-    href: 'https://x.com/MeiCloudie1242',
-    icon: XLogo,
-    label: 'X (Twitter)'
-  }
-]
-
-type SpecialThanks = {
-  href: string
-  label: string
-}
-
-const SPECIAL_THANKS: SpecialThanks[] = [
-  { href: 'https://nextjs.org', label: 'Next.js' },
-  { href: 'https://ui.shadcn.com', label: 'Shadcn UI' },
-  { href: 'https://magicui.design/', label: 'Magic UI' },
-  { href: 'https://ui.aceternity.com', label: 'Aceternity UI' }
-]
+import { SOCIAL_LINKS, SPECIAL_THANKS } from '@/lib/constants'
 
 const FooterLink = ({ href, children }: { href: string; children: React.ReactNode }) => (
   <a

@@ -19,10 +19,10 @@ type NavItem = {
 }
 
 const NAV_ITEMS: NavItem[] = [
-  { href: '/#about', label: 'About' },
-  { href: '/#skills', label: 'Skills' },
-  { href: '/#projects', label: 'Projects' },
-  { href: '/#contact', label: 'Contact' }
+  { href: '#about', label: 'About' },
+  { href: '#skills', label: 'Skills' },
+  { href: '#projects', label: 'Projects' },
+  { href: '#contact', label: 'Contact' }
 ]
 
 const Header = () => {
@@ -32,7 +32,7 @@ const Header = () => {
   return (
     <header className='sticky top-0 z-50'>
       <div className='bg-background/80 backdrop-blur-md'>
-        <div className='container pt-12 pb-4'>
+        <div className='container pt-12 pb-8'>
           <div className='flex items-center justify-between'>
             <div className='flex items-center gap-2'>
               <Link href='/'>
@@ -102,7 +102,7 @@ const Header = () => {
 
               <div className='flex flex-col gap-2 mb-8'>
                 <h1 className='text-2xl font-lobster'>Trương Thục Vân</h1>
-                <p className='text-lg font-semibold text-primary'>Frontend Developer</p>
+                <p className='text-lg font-semibold text-primary'>Software Engineer</p>
               </div>
 
               <nav className='flex flex-col items-start gap-8'>
