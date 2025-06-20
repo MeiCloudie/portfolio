@@ -41,7 +41,7 @@ export default function RootLayout({
           storageKey='theme-mode'
         >
           <Header />
-          <main className='container py-7'>{children}</main>
+          <main className='py-7'>{children}</main>
           <Footer />
         </ThemeProvider>
       </body>
