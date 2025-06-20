@@ -50,11 +50,11 @@
   --color-color-2: var(--color-2);
   --color-color-1: var(--color-1);
   @keyframes rainbow {
-  0% {
-    background-position: 0%;
+    0% {
+      background-position: 0%;
     }
-  100% {
-    background-position: 200%;
+    100% {
+      background-position: 200%;
     }
   }
 }
@@ -157,15 +157,22 @@ html {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+
   .font-lobster {
     font-family: var(--font-lobster);
   }
 
   section[id] {
     scroll-margin-top: 10rem;
+  }
+
+  section {
+    padding-top: 2rem;
+    padding-bottom: 5rem;
   }
 }
 

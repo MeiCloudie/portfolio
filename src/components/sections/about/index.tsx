@@ -15,7 +15,7 @@ const AboutSection = () => {
       {/* Background */}
       <Spotlight className='-top-40 left-0 md:-top-20 md:left-60' fill='white' />
 
-      {/* Introduction */}
+      {/* I - Introduction */}
       <div className='introduction flex flex-col-reverse xl:flex-row gap-10'>
         {/* Left: Content */}
         <div className='flex-1 flex flex-col text-center xl:text-left items-center xl:items-start justify-center gap-4'>
@@ -78,7 +78,8 @@ const AboutSection = () => {
                 alt='About'
                 width={350}
                 height={350}
-                className='relative z-10 rounded-md'
+                className='relative z-10 rounded-md object-cover'
+                priority
               />
             </div>
             <div className='absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 w-[180px] sm:w-[220px] md:w-[350px] h-[300px] sm:h-[380px] md:h-[590px] bg-primary/20 rounded-md'></div>
@@ -99,8 +100,18 @@ const AboutSection = () => {
         </div>
       </div>
 
-      {/* Achievements  */}
-      <div className='achievements'></div>
+      {/* II - Achievements  */}
+      <div className='achievements'>
+        {/* Left: Images */}
+        <div className='left-images'>
+          <div className='image-1'>
+            {/* <Image src='/images/graduation.jpg' alt='Graduation' width={100} height={100} /> */}
+            {/* <Image src='/images/valedictorian-medal.jpg' alt='Valedictorian Medal' width={100} height={100} /> */}
+          </div>
+        </div>
+
+        {/* Right: Content */}
+      </div>
     </section>
   )
 }
