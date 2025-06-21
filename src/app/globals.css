@@ -90,16 +90,28 @@
       background-position: 100% -100%;
     }
   }
+  --animate-shine: shine var(--duration) infinite linear;
+  @keyframes shine {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    to {
+      background-position: 0% 0%;
+    }
+  }
 }
 
 :root {
   --radius: 0.65rem;
-  --background: oklch(0.956 0.0603 91.8);
-  --background-lighter: oklch(0.9618 0.0512 91.37);
+  --background: oklch(0.9472 0.0257 253.57);
+  --background-lighter: oklch(0.9602 0.019355 252.8775);
   --foreground: oklch(0.141 0.005 285.823);
-  --card: oklch(0.956 0.0603 91.8);
+  --card: oklch(0.9705 0.0142 254.6);
   --card-foreground: oklch(0.141 0.005 285.823);
-  --popover: oklch(0.956 0.0603 91.8);
+  --popover: oklch(0.9705 0.0142 254.6);
   --popover-foreground: oklch(0.141 0.005 285.823);
   --primary: oklch(0.795 0.184 86.047);
   --primary-foreground: oklch(0.421 0.095 57.708);

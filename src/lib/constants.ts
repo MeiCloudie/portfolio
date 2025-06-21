@@ -77,3 +77,67 @@ export const SPECIAL_THANKS: SpecialThanks[] = [
   { href: 'https://magicui.design/', label: 'Magic UI' },
   { href: 'https://ui.aceternity.com', label: 'Aceternity UI' }
 ]
+
+export type SkillLevel = 'Basic' | 'Intermediate' | 'Experienced'
+
+export type Skill = {
+  name: string
+  level: SkillLevel
+}
+
+export type SkillCategory = {
+  title: string
+  skills: Skill[]
+}
+
+export const SKILL_COLORS = ['#FFA001', '#FE8FB5', '#FC4100']
+
+export const SKILLS: SkillCategory[] = [
+  {
+    title: 'Front End',
+    skills: [
+      { name: 'HTML', level: 'Experienced' },
+      { name: 'CSS', level: 'Experienced' },
+      { name: 'SASS', level: 'Intermediate' },
+      { name: 'JavaScript', level: 'Intermediate' },
+      { name: 'TypeScript', level: 'Intermediate' },
+      { name: 'React', level: 'Intermediate' },
+      { name: 'Next.js', level: 'Intermediate' },
+      { name: 'Angular', level: 'Basic' },
+      { name: 'React Native', level: 'Basic' },
+      { name: 'Flutter', level: 'Basic' },
+      { name: 'Bootstrap', level: 'Experienced' },
+      { name: 'Tailwind CSS', level: 'Experienced' },
+      { name: 'ShadcnUI', level: 'Experienced' },
+      { name: 'MUI', level: 'Intermediate' },
+      { name: 'Ant Design', level: 'Intermediate' },
+      { name: 'MobX', level: 'Basic' },
+      { name: 'Zustand', level: 'Intermediate' },
+      { name: 'Redux', level: 'Basic' }
+    ]
+  },
+  {
+    title: 'Back End',
+    skills: [
+      { name: 'PostgreSQL', level: 'Intermediate' },
+      { name: 'MySQL', level: 'Basic' },
+      { name: 'REST API', level: 'Basic' },
+      { name: 'Node.js', level: 'Intermediate' },
+      { name: 'NestJS', level: 'Basic' },
+      { name: 'Express.js', level: 'Basic' },
+      { name: 'Python', level: 'Basic' }
+    ]
+  },
+  {
+    title: 'Tool Stack',
+    skills: [
+      { name: 'Postman', level: 'Intermediate' },
+      { name: 'DBML', level: 'Intermediate' },
+      { name: 'Docker', level: 'Basic' },
+      { name: 'Git/GitHub', level: 'Experienced' },
+      { name: 'GitHub Action (CI/CD)', level: 'Basic' },
+      { name: 'Jira', level: 'Intermediate' },
+      { name: 'Figma', level: 'Intermediate' }
+    ]
+  }
+]
