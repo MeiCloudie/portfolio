@@ -14,7 +14,7 @@ import { ScratchToReveal } from '@/components/magicui/scratch-to-reveal'
 
 const AboutSection = () => {
   return (
-    <section id='about'>
+    <section id='about' className='min-h-screen'>
       {/* Background */}
       <Spotlight className='-top-40 left-0 md:-top-20 md:left-60' fill='white' />
 

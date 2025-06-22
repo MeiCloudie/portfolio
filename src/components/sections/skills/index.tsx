@@ -7,7 +7,7 @@ import SkillCard from './skill-card'
 
 const SkillsSection = () => {
   return (
-    <section id='skills'>
+    <section id='skills' className='min-h-screen'>
       <div className='container'>
         <div className='flex flex-col items-center justify-center gap-16'>
           <SectionTitle title='Technical Skills' />

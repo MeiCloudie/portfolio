@@ -1,4 +1,6 @@
 import AboutSection from '@/components/sections/about'
+import ContactSection from '@/components/sections/contact'
+import ProjectsSection from '@/components/sections/projects'
 import SkillsSection from '@/components/sections/skills'
 
 export default function Home() {
@@ -8,9 +10,7 @@ export default function Home() {
 
       <SkillsSection />
 
-      <section id='projects' className='h-screen'>
-        <p>Projects</p>
-      </section>
+      <ProjectsSection />
 
       <section id='work-experience' className='h-screen'>
         <p>Work Experience</p>
@@ -20,9 +20,7 @@ export default function Home() {
         <p>Education</p>
       </section>
 
-      <section id='contact' className='h-screen'>
-        <p>Contact</p>
-      </section>
+      <ContactSection />
     </div>
   )
 }
