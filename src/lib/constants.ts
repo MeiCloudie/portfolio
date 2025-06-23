@@ -131,11 +131,14 @@ export const SKILLS: SkillCategory[] = [
   {
     title: 'Tool Stack',
     skills: [
+      { name: 'VS Code', level: 'Experienced' },
+      { name: 'Cursor', level: 'Experienced' },
+      { name: 'Postman', level: 'Intermediate' },
       { name: 'Postman', level: 'Intermediate' },
       { name: 'DBML', level: 'Intermediate' },
       { name: 'Docker', level: 'Basic' },
       { name: 'Git/GitHub', level: 'Experienced' },
-      { name: 'GitHub Action (CI/CD)', level: 'Basic' },
+      { name: 'CI/CD', level: 'Basic' },
       { name: 'Jira', level: 'Intermediate' },
       { name: 'Figma', level: 'Intermediate' }
     ]
