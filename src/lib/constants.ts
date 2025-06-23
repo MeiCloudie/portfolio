@@ -144,3 +144,68 @@ export const SKILLS: SkillCategory[] = [
     ]
   }
 ]
+
+export type Platform = 'Website' | 'Mobile' | 'Desktop'
+
+export type Project = {
+  image: string
+  sourceCode: string
+  platform: Platform[]
+  title: string
+  description: string
+  demo: string
+  technologies: string[]
+}
+
+export const PROJECTS: Project[] = [
+  {
+    image: '/projects/airbnb-clone-client.png',
+    sourceCode: 'https://github.com/MeiCloudie/airbnb-clone-client',
+    platform: ['Website'],
+    title: 'Airbnb Clone Client',
+    description:
+      'Developed a client-side Airbnb clone replicating core platform features as a Booking Marketplace Platform, focusing on building key functionalities such as search with Google Maps, calendar-based booking, and payment integration.',
+    demo: 'https://airbnb-clone-client-meicloudie.vercel.app',
+    technologies: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'ShadcnUI', 'Zustand']
+  },
+  {
+    image: '/projects/hutech-classroom.png',
+    sourceCode: 'https://github.com/MeiCloudie/hutech-classroom-client-app',
+    platform: ['Website', 'Desktop'],
+    title: 'HUTECH Classroom',
+    description:
+      'Developed a Classroom Management System for HUTECH to simplify classroom tasks, support teachers and staff, and improve the student learning experience.',
+    demo: 'https://hutech-classroom-edu.vercel.app',
+    technologies: ['React', 'TypeScript', 'MUI', 'MobX', 'Flutter', 'PostgreSQL']
+  },
+  {
+    image: '/projects/fiverr-clone.png',
+    sourceCode: 'https://github.com/MeiCloudie/react-fiverr-clone',
+    platform: ['Website'],
+    title: 'Fiverr Clone',
+    description:
+      'Developed a Fiverr Clone – a freelance service marketplace platform inspired by the real Fiverr – to practice and enhance Front-End development skills. The project replicates core features such as service listings, user profiles, and order management.',
+    demo: 'https://react-fiverr-clone-meicloudie.vercel.app',
+    technologies: ['React', 'JavaScript', 'Redux', 'Tailwind CSS', 'Ant Design']
+  },
+  {
+    image: '/projects/cyber-shoe-shop.png',
+    sourceCode: 'https://github.com/MeiCloudie/cyber-shoe-shop',
+    platform: ['Website'],
+    title: 'Cyber Shoe Shop',
+    description:
+      'Developed a fashion e-commerce website interface focused on shoe sales, practicing API calls to fetch and render data dynamically. Built using vanilla HTML, CSS, and JavaScript.',
+    demo: 'https://cyber-shoe-shop-group5-bcs12.vercel.app',
+    technologies: ['HTML', 'CSS', 'SASS', 'JavaScript']
+  },
+  {
+    image: '/projects/corpvision.png',
+    sourceCode: 'https://github.com/MeiCloudie/corpvision',
+    platform: ['Website'],
+    title: 'Corpvision',
+    description:
+      'Developed an informational interface for Corp Vision, built using HTML, CSS, JavaScript, and Bootstrap.',
+    demo: 'https://corpvision-group9-bcs12.vercel.app',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap']
+  }
+]
