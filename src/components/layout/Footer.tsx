@@ -15,7 +15,7 @@ const FooterLink = ({ href, children }: { href: string; children: React.ReactNod
 
 const Footer = () => {
   return (
-    <footer className='py-8 sm:py-10 border-t bg-background'>
+    <footer className='py-8 sm:py-10 border-t bg-background-lighter'>
       <div className='container px-4 sm:px-6 text-center space-y-4 sm:space-y-2'>
         <p className='text-xs sm:text-sm'>
           &copy; {new Date().getFullYear()}{' '}

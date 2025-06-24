@@ -63,16 +63,19 @@ const Header = () => {
                 </Link>
               </div>
 
+              {/* Theme Toggle */}
               <ModeToggle />
             </div>
 
-            {/* Mobile Navigation Toggle */}
             <div className='flex lg:hidden items-center gap-4'>
+              {/* Theme Toggle */}
               <ModeToggle />
+
+              {/* Mobile Navigation Toggle */}
               <Button
                 variant='ghost'
                 size='icon'
-                className='h-10 w-10 transition-colors duration-300 hover:text-primary'
+                className='h-10 w-10 transition-colors duration-300 hover:text-primary hover:bg-transparent hover:dark:bg-transparent'
                 onClick={() => setIsMobileMenuOpen(true)}
               >
                 <BarsStaggeredIcon width={24} height={24} />

@@ -1,7 +1,9 @@
 import AboutSection from '@/components/sections/about'
 import ContactSection from '@/components/sections/contact'
+import EducationSection from '@/components/sections/education'
 import ProjectsSection from '@/components/sections/projects'
 import SkillsSection from '@/components/sections/skills'
+import WorkExperienceSection from '@/components/sections/work-experience'
 
 export default function Home() {
   return (
@@ -12,13 +14,9 @@ export default function Home() {
 
       <ProjectsSection />
 
-      <section id='work-experience' className='h-screen'>
-        <p>Work Experience</p>
-      </section>
+      <WorkExperienceSection />
 
-      <section id='education' className='h-screen'>
-        <p>Education</p>
-      </section>
+      <EducationSection />
 
       <ContactSection />
     </div>

@@ -5,7 +5,7 @@ import React from 'react'
 
 const ProjectsSection = () => {
   return (
-    <section id='projects' className='min-h-screen py-20'>
+    <section id='projects' className='min-h-screen py-20 bg-background-lighter'>
       <div className='container'>
         <div className='flex flex-col items-center justify-center gap-16'>
           <SectionTitle title='Projects' />

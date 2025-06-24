@@ -19,7 +19,7 @@ export function ModeToggle() {
       size={'icon'}
       onClick={toggleTheme}
       aria-label='Toggle theme'
-      className='cursor-pointer transition-colors duration-300 hover:text-primary'
+      className='cursor-pointer transition-colors duration-300 hover:text-primary hover:bg-transparent hover:dark:bg-transparent'
     >
       <div className='relative w-6 h-6'>
         <div className='absolute inset-0 transform transition-transform duration-500 scale-100 rotate-0 dark:scale-0 dark:-rotate-90'>
