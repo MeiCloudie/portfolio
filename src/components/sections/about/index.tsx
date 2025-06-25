@@ -75,13 +75,13 @@ const AboutSection = () => {
         <div className='flex-1 flex items-center justify-center gap-10 sm:gap-18'>
           {/* Image */}
           <div className='relative'>
-            <div className='w-[180px] sm:w-[220px] md:w-[350px] aspect-square'>
+            <div className='w-[180px] sm:w-[220px] md:w-[350px]'>
               <Image
                 src='/images/avatar.jpg'
                 alt='About'
                 width={350}
                 height={350}
-                className='relative z-10 rounded-md object-cover w-full h-auto'
+                className='relative z-10 rounded-md object-cover w-full h-full'
                 priority
               />
             </div>
@@ -111,13 +111,13 @@ const AboutSection = () => {
             <div className='relative w-full h-[500px] flex items-center justify-center'>
               {/* Graduation Image */}
               <div className='absolute transform top-0 sm:left-20 md:left-30 lg:left-70 xl:left-8 -rotate-6 rounded-2xl overflow-hidden border-2 border-gray-200 shadow-xl'>
-                <div className='w-[280px] sm:w-[300px] 2xl:w-[350px] aspect-square'>
+                <div className='w-[280px] sm:w-[300px] 2xl:w-[350px]'>
                   <Image
                     src='/images/graduation.jpg'
                     alt='Graduation'
                     width={350}
                     height={350}
-                    className='object-cover w-full h-auto'
+                    className='object-cover w-full h-full'
                     priority
                   />
                 </div>

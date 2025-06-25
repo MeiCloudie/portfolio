@@ -7,7 +7,7 @@ import WorkExperienceSection from '@/components/sections/work-experience'
 
 export default function Home() {
   return (
-    <div className='flex flex-col gap-10'>
+    <div className='flex flex-col'>
       <AboutSection />
 
       <SkillsSection />

@@ -209,3 +209,73 @@ export const PROJECTS: Project[] = [
     technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap']
   }
 ]
+
+export type Supervisor = {
+  fullName: string
+  position: string
+  email: string
+}
+
+export type WorkExperience = {
+  duration: string
+  position: string
+  company: string
+  location: string
+  description: string[]
+  techStack: string[]
+  supervisor: Supervisor
+}
+
+export const WORK_EXPERIENCES: WorkExperience[] = [
+  {
+    duration: 'Feb 2025 – Apr 2025',
+    position: 'FREELANCE FRONT-END DEVELOPER',
+    company: 'MXANH',
+    location: 'Ho Chi Minh City, Vietnam',
+    description: [
+      'Led the design and development of a Smart Waste Collection and Recycling System, defining system requirements and technical specifications.',
+      'Designed user-friendly UI/UX interfaces with Figma, focusing on intuitive navigation and accessibility across devices.',
+      'Researched and applied Flutter to prototype key mobile features like waste categorization, scheduling, and notifications.'
+    ],
+    techStack: ['Flutter', 'Figma', 'Business Analysis'],
+    supervisor: {
+      fullName: 'Mr. Nguyen Duc An',
+      position: 'Project Manager',
+      email: 'nguyenducan.vn@gmail.com'
+    }
+  },
+  {
+    duration: 'Dec 2024 – Apr 2025',
+    position: 'FREELANCE FRONT-END DEVELOPER',
+    company: 'Garago',
+    location: 'Ho Chi Minh City, Vietnam',
+    description: [
+      'Contributed to defining system requirements and planning key functionalities for the Automotive Service Search and Evaluation System.',
+      'Designed modern, user-friendly UI/UX using Figma, with a focus on responsive layout and intuitive user flow.',
+      'Assisted in developing the web application using Angular, implementing core features such as garage location search, service evaluation, and garage sales management.'
+    ],
+    techStack: ['Angular', 'Figma', 'Business Analysis'],
+    supervisor: {
+      fullName: 'Mr. Nguyen Duc An',
+      position: 'Project Manager',
+      email: 'nguyenducan.vn@gmail.com'
+    }
+  },
+  {
+    duration: 'Apr 2024 – Oct 2024',
+    position: 'FULLSTACK DEVELOPER',
+    company: 'CyberSoft Academy',
+    location: 'Ho Chi Minh City, Vietnam',
+    description: [
+      'Developed TypeScript documentation by researching and organizing over 20 key resources, enhancing content creation by 50% as a valuable company asset.',
+      "Built a Transaction Management project in Python, meeting approximately 90% of the company's specifications, with potential for future development to expand capabilities by an estimated 20%.",
+      'Compiled a structured documentation set by consolidating around 50 resources, including applicable datasets, for Data Analysis with Python.'
+    ],
+    techStack: ['TypeScript', 'Python', 'Data Analysis'],
+    supervisor: {
+      fullName: 'Ms. Tran Chau Thanh Nguyen',
+      position: 'Chief Technology Officer',
+      email: 'ntran44.cybersoft@gmail.com'
+    }
+  }
+]
