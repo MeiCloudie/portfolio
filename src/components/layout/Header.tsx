@@ -25,9 +25,18 @@ const NAV_ITEMS: NavItem[] = [
   { href: '#contact', label: 'Contact' }
 ]
 
+const NAV_ITEMS_IN_MENU: NavItem[] = [
+  { href: '#about', label: 'About' },
+  { href: '#skills', label: 'Skills' },
+  { href: '#projects', label: 'Projects' },
+  { href: '#work-experience', label: 'Work Experience' },
+  { href: '#education', label: 'Education' },
+  { href: '#contact', label: 'Contact' }
+]
+
 const Header = () => {
   const activeSection = useActiveSection()
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
     <header className='sticky top-0 z-50'>
@@ -45,8 +54,8 @@ const Header = () => {
             </div>
 
             {/* Desktop Navigation */}
-            <div className='hidden lg:flex items-center gap-10 xl:gap-14'>
-              <nav className='flex items-center gap-10 xl:gap-16'>
+            <div className='flex items-center gap-10'>
+              <nav className='hidden xl:flex items-center me-3 gap-10 xl:gap-16'>
                 {NAV_ITEMS.map((item) => (
                   <NavLink key={item.href} href={item.href} isActive={activeSection === item.href.slice(1)}>
                     {item.label}
@@ -54,7 +63,7 @@ const Header = () => {
                 ))}
               </nav>
 
-              <div className='flex items-center gap-2'>
+              <div className='hidden xl:flex items-center gap-2'>
                 {/* TODO: Add PDF file */}
                 <Link href='/'>
                   <Button variant='default' className='font-medium text-xl py-7'>
@@ -63,31 +72,28 @@ const Header = () => {
                 </Link>
               </div>
 
-              {/* Theme Toggle */}
-              <ModeToggle />
-            </div>
+              <div className='flex items-center gap-4'>
+                {/* Theme Toggle */}
+                <ModeToggle />
 
-            <div className='flex lg:hidden items-center gap-4'>
-              {/* Theme Toggle */}
-              <ModeToggle />
-
-              {/* Mobile Navigation Toggle */}
-              <Button
-                variant='ghost'
-                size='icon'
-                className='h-10 w-10 transition-colors duration-300 hover:text-primary hover:bg-transparent hover:dark:bg-transparent'
-                onClick={() => setIsMobileMenuOpen(true)}
-              >
-                <BarsStaggeredIcon width={24} height={24} />
-              </Button>
+                {/*  Navigation Toggle */}
+                <Button
+                  variant='ghost'
+                  size='icon'
+                  className='h-10 w-10 transition-colors duration-300 hover:text-primary hover:bg-transparent hover:dark:bg-transparent'
+                  onClick={() => setIsMenuOpen(true)}
+                >
+                  <BarsStaggeredIcon width={24} height={24} />
+                </Button>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Mobile Menu Overlay */}
+      {/* Menu Overlay */}
       <AnimatePresence>
-        {isMobileMenuOpen && (
+        {isMenuOpen && (
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -98,7 +104,7 @@ const Header = () => {
             <div className='container py-14'>
               <div className='flex items-center justify-between mb-8'>
                 <h2 className='text-3xl font-bold'>Menu</h2>
-                <Button variant='ghost' size='icon' className='h-10 w-10' onClick={() => setIsMobileMenuOpen(false)}>
+                <Button variant='ghost' size='icon' className='h-10 w-10' onClick={() => setIsMenuOpen(false)}>
                   <XmarkIcon width={24} height={24} />
                 </Button>
               </div>
@@ -109,8 +115,8 @@ const Header = () => {
               </div>
 
               <nav className='flex flex-col items-start gap-8'>
-                {NAV_ITEMS.map((item) => (
-                  <NavLink key={item.href} href={item.href} onClick={() => setIsMobileMenuOpen(false)}>
+                {NAV_ITEMS_IN_MENU.map((item) => (
+                  <NavLink key={item.href} href={item.href} onClick={() => setIsMenuOpen(false)}>
                     {item.label}
                   </NavLink>
                 ))}
@@ -118,7 +124,7 @@ const Header = () => {
 
               <div className='flex flex-col items-start mt-8 text-primary'>
                 {/* TODO: Add PDF file */}
-                <NavLink key={'/'} href={'/'} onClick={() => setIsMobileMenuOpen(false)}>
+                <NavLink key={'/'} href={'/'} onClick={() => setIsMenuOpen(false)}>
                   DOWNLOAD CV
                 </NavLink>
               </div>

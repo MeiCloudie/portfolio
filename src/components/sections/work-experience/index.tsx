@@ -6,9 +6,11 @@ import { Spotlight } from '@/components/ui/spotlight-new'
 
 const WorkExperienceSection = () => {
   return (
-    <section id='work-experience' className='min-h-screen py-20 relative overflow-hidden'>
-      <Spotlight />
-      <div className='container'>
+    <section id='work-experience' className='min-h-screen py-20 relative'>
+      <div className='absolute inset-0 overflow-hidden'>
+        <Spotlight />
+      </div>
+      <div className='container relative'>
         <div className='flex flex-col items-center justify-center gap-16'>
           <SectionTitle title='Work Experience' />
 
