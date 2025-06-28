@@ -2,7 +2,7 @@ import React from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { ShineBorder } from '@/components/magicui/shine-border'
 import { AuroraText } from '@/components/magicui/aurora-text'
-import { type SkillCategory, SKILL_COLORS } from '@/lib/constants'
+import { type SkillCategory, GRADIENT_COLORS } from '@/lib/constants'
 import SkillItem from './skill-item'
 
 type SkillCardProps = {
@@ -12,10 +12,10 @@ type SkillCardProps = {
 const SkillCard = ({ category }: SkillCardProps) => {
   return (
     <Card className='relative overflow-hidden w-full p-10'>
-      <ShineBorder borderWidth={3} shineColor={SKILL_COLORS} />
+      <ShineBorder borderWidth={3} shineColor={GRADIENT_COLORS} />
       <CardHeader>
         <CardTitle>
-          <AuroraText className='font-bold leading-tight text-3xl sm:text-4xl' colors={SKILL_COLORS}>
+          <AuroraText className='font-bold leading-tight text-3xl sm:text-4xl' colors={GRADIENT_COLORS}>
             {category.title}
           </AuroraText>
         </CardTitle>

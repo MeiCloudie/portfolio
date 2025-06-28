@@ -90,7 +90,7 @@ export type SkillCategory = {
   skills: Skill[]
 }
 
-export const SKILL_COLORS = ['#FFA001', '#FE8FB5', '#FC4100']
+export const GRADIENT_COLORS = ['#FFA001', '#FE8FB5', '#FC4100']
 
 export const SKILLS: SkillCategory[] = [
   {
