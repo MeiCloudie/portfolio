@@ -1,4 +1,4 @@
-# Personal Portfolio
+# ✨ Personal Portfolio ✨
 
 This is My Personal Portfolio website built with modern web technologies to showcase my projects and skills.
 
