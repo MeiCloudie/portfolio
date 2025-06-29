@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-This is my personal portfolio website built with modern web technologies to showcase my projects and skills.
+This is My Personal Portfolio website built with modern web technologies to showcase my projects and skills.
 
 ## 🛠️ Tech Stack
 
