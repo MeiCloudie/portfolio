@@ -64,8 +64,7 @@ const Header = () => {
               </nav>
 
               <div className='hidden xl:flex items-center gap-2'>
-                {/* TODO: Add PDF file */}
-                <Link href='/'>
+                <Link href='/cv/CV-FrontEndSoftwareEngineer-TruongThucVan.pdf' target='_blank'>
                   <Button variant='default' className='font-medium text-xl py-7'>
                     <FileArrowDownIcon /> Download CV
                   </Button>

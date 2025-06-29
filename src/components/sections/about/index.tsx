@@ -57,8 +57,7 @@ const AboutSection = () => {
 
           {/* Buttons */}
           <div className='flex flex-col md:flex-row items-center gap-6 mt-12 w-3/4 xl:w-full'>
-            {/* TODO: Add PDF file */}
-            <Link href='/' target='_blank' className='w-full'>
+            <Link href='/cv/CV-FrontEndSoftwareEngineer-TruongThucVan.pdf' target='_blank' className='w-full'>
               <Button variant={'default'} className='w-full text-xl sm:text-2xl py-8'>
                 <FileArrowDownIcon width={24} height={24} /> Download CV
               </Button>
