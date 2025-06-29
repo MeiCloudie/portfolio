@@ -24,3 +24,14 @@ This is my personal portfolio website built with modern web technologies to show
 - Smooth animations and transitions
 - Type-safe development environment
 - Optimized for performance
+
+## 📑 Main Sections
+
+The portfolio website includes the following main sections:
+
+1. **About** - Personal introduction and overview
+2. **Skills** - Technical skills and competencies
+3. **Projects** - Showcase of personal and professional projects
+4. **Work Experience** - Professional work history and achievements
+5. **Education** - Academic background and certifications
+6. **Contact** - Ways to get in touch and connect
