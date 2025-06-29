@@ -122,8 +122,12 @@ const Header = () => {
               </nav>
 
               <div className='flex flex-col items-start mt-8 text-primary'>
-                {/* TODO: Add PDF file */}
-                <NavLink key={'/'} href={'/'} onClick={() => setIsMenuOpen(false)}>
+                <NavLink
+                  key={'/cv/CV-FrontEndSoftwareEngineer-TruongThucVan.pdf'}
+                  href={'/cv/CV-FrontEndSoftwareEngineer-TruongThucVan.pdf'}
+                  onClick={() => setIsMenuOpen(false)}
+                  target='_blank'
+                >
                   DOWNLOAD CV
                 </NavLink>
               </div>
