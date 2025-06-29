@@ -52,7 +52,7 @@ const ContactSection = () => {
                     <MapLocationDotIcon width={40} height={40} className='text-primary sm:w-[60px] sm:h-[60px]' />
                     <div className='flex flex-col gap-2 text-center sm:text-left'>
                       <h4 className='text-lg md:text-xl uppercase font-medium text-muted-foreground'>Address Point</h4>
-                      <p className='text-xl md:text-2xl font-semibold'>Ho Chi Minh City, Vietnam</p>
+                      <p className='text-lg sm:text-xl md:text-2xl font-semibold'>Ho Chi Minh City, Vietnam</p>
                     </div>
                   </div>
                 </CardContent>
@@ -68,7 +68,7 @@ const ContactSection = () => {
                     <div className='flex flex-col gap-2 text-center sm:text-left'>
                       <h4 className='text-lg md:text-xl uppercase font-medium text-muted-foreground'>Mail Me</h4>
                       <div className='flex items-center gap-2 flex-wrap justify-center sm:justify-start'>
-                        <p className='text-xl md:text-2xl font-semibold group-hover:text-primary transition-colors duration-300 break-all sm:break-normal'>
+                        <p className='text-lg sm:text-xl md:text-2xl font-semibold group-hover:text-primary transition-colors duration-300 break-all sm:break-normal'>
                           tthvan.dev@gmail.com
                         </p>
                         <Button

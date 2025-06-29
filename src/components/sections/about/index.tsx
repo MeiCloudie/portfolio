@@ -27,7 +27,7 @@ const AboutSection = () => {
             <WordRotate duration={5000} className='text-primary pr-1' words={['Trương Thục Vân', 'MeiCloudie']} />
           </div>
 
-          <div className='flex items-center gap-2 text-2xl sm:text-3xl xl:text-5xl'>
+          <div className='flex items-center gap-0 sm:gap-2 text-2xl sm:text-3xl xl:text-5xl'>
             <h1 className='mr-2'>I&apos;m a</h1>
             <SparklesText
               className='text-2xl sm:text-3xl xl:text-5xl font-medium'

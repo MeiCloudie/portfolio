@@ -41,7 +41,7 @@ const Header = () => {
   return (
     <header className='sticky top-0 z-50'>
       <div className='bg-background/80 backdrop-blur-md'>
-        <div className='container pt-12 pb-8'>
+        <div className='container pt-6 sm:pt-12 pb-4 sm:pb-8'>
           <div className='flex items-center justify-between'>
             <div className='flex items-center gap-2'>
               <Link href='/'>
@@ -101,7 +101,7 @@ const Header = () => {
             transition={{ duration: 0.2 }}
             className='fixed inset-0 h-fit bg-background/50 backdrop-blur-md z-50'
           >
-            <div className='container py-14'>
+            <div className='container py-8 sm:py-14'>
               <div className='flex items-center justify-between mb-8'>
                 <h2 className='text-3xl font-bold'>Menu</h2>
                 <Button variant='ghost' size='icon' className='h-10 w-10' onClick={() => setIsMenuOpen(false)}>
