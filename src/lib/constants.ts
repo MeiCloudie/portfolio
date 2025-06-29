@@ -134,7 +134,6 @@ export const SKILLS: SkillCategory[] = [
       { name: 'VS Code', level: 'Experienced' },
       { name: 'Cursor', level: 'Experienced' },
       { name: 'Postman', level: 'Intermediate' },
-      { name: 'Postman', level: 'Intermediate' },
       { name: 'DBML', level: 'Intermediate' },
       { name: 'Docker', level: 'Basic' },
       { name: 'Git/GitHub', level: 'Experienced' },
