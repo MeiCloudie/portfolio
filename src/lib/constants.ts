@@ -9,6 +9,8 @@ import NextjsLogo from '@/components/logo/nextjs-logo'
 import NestjsLogo from '@/components/logo/nestjs-logo'
 import { ComponentType } from 'react'
 
+export const CV_URL = '/cv/CV-SoftwareEngineer-TruongThucVan.pdf'
+
 export type SocialLink = {
   href: string
   icon: ComponentType<{ width: number; height: number; className?: string }>

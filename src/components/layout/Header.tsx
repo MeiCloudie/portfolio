@@ -11,6 +11,7 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'motion/react'
 import XmarkIcon from '@/components/icon/xmark-icon'
+import { CV_URL } from '@/lib/constants'
 
 type NavItem = {
   href: string
@@ -64,7 +65,7 @@ const Header = () => {
               </nav>
 
               <div className='hidden xl:flex items-center gap-2'>
-                <Link href='/cv/CV-FrontEndSoftwareEngineer-TruongThucVan.pdf' target='_blank'>
+                <Link href={CV_URL} target='_blank'>
                   <Button variant='default' className='font-medium text-xl py-7'>
                     <FileArrowDownIcon /> Download CV
                   </Button>
@@ -122,12 +123,7 @@ const Header = () => {
               </nav>
 
               <div className='flex flex-col items-start mt-8 text-primary'>
-                <NavLink
-                  key={'/cv/CV-FrontEndSoftwareEngineer-TruongThucVan.pdf'}
-                  href={'/cv/CV-FrontEndSoftwareEngineer-TruongThucVan.pdf'}
-                  onClick={() => setIsMenuOpen(false)}
-                  target='_blank'
-                >
+                <NavLink key={CV_URL} href={CV_URL} onClick={() => setIsMenuOpen(false)} target='_blank'>
                   DOWNLOAD CV
                 </NavLink>
               </div>

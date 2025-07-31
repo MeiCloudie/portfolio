@@ -3,7 +3,7 @@ import PaperPlaneIcon from '@/components/icon/paper-plane-icon'
 import { SparklesText } from '@/components/magicui/sparkles-text'
 import { WordRotate } from '@/components/magicui/word-rotate'
 import { Button } from '@/components/ui/button'
-import { SOCIAL_LINKS, MAIN_SKILLS } from '@/lib/constants'
+import { SOCIAL_LINKS, MAIN_SKILLS, CV_URL } from '@/lib/constants'
 import { Spotlight } from '@/components/ui/spotlight'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -57,7 +57,7 @@ const AboutSection = () => {
 
           {/* Buttons */}
           <div className='flex flex-col md:flex-row items-center gap-6 mt-12 w-3/4 xl:w-full'>
-            <Link href='/cv/CV-FrontEndSoftwareEngineer-TruongThucVan.pdf' target='_blank' className='w-full'>
+            <Link href={CV_URL} target='_blank' className='w-full'>
               <Button variant={'default'} className='w-full text-xl sm:text-2xl py-8'>
                 <FileArrowDownIcon width={24} height={24} /> Download CV
               </Button>
