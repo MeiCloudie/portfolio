@@ -229,6 +229,23 @@ export type WorkExperience = {
 
 export const WORK_EXPERIENCES: WorkExperience[] = [
   {
+    duration: 'Aug 2025 – Sep 2025',
+    position: 'TECHNICAL SUPPORT ENGINEER',
+    company: 'VNPT',
+    location: 'Ho Chi Minh City, Vietnam',
+    description: [
+      'Conducted system bug analysis, identified issues, and generated detailed, clear reports.',
+      'Provided training, guidance, and technical support to customers, ensuring efficient use of system features.',
+      'Collected customer feedback, consolidated insights, and contributed to feature development ideas for system enhancement.'
+    ],
+    techStack: ['Bug Tracking', 'System Analysis', 'Customer Support'],
+    supervisor: {
+      fullName: 'Mr. Nguyen Xuan Tan',
+      position: 'IT Center Manager',
+      email: 'tannx.hcm@vnpt.vn'
+    }
+  },
+  {
     duration: 'Feb 2025 – Apr 2025',
     position: 'FREELANCE FRONT-END DEVELOPER',
     company: 'MXANH',
