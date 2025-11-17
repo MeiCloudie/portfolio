@@ -195,9 +195,9 @@ export const PROJECTS: Project[] = [
     platform: ['Website'],
     title: 'Cyber Shoe Shop',
     description:
-      'Developed a fashion e-commerce website interface focused on shoe sales, practicing API calls to fetch and render data dynamically. Built using vanilla HTML, CSS, and JavaScript.',
+      'Developed a fashion e-commerce website interface focused on shoe sales, practicing API calls to fetch and render data dynamically. Built using vanilla HTML, SASS, and JavaScript.',
     demo: 'https://cyber-shoe-shop-group5-bcs12.vercel.app',
-    technologies: ['HTML', 'CSS', 'SASS', 'JavaScript']
+    technologies: ['HTML', 'CSS', 'SASS', 'JavaScript', 'Bootstrap']
   },
   {
     image: '/projects/corpvision.png',
